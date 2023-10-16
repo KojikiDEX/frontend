@@ -1,0 +1,24 @@
+{
+  "sake": {
+    "symbol": "SAKE",
+    "title": "Sake Fair Auction",
+    "boldDescription": "Sake",
+    "description1": " provides the middleware infrastructure to aggregate essential DeFi products and liquidity, thereby revolutionising on-chain asset management. Our robust platform provides protocols, treasuries, and individuals with the means to construct and manage potent financial instruments by combining tokenized baskets, yield pools, and derivatives.Our no-code UI/UX enables developers and asset managers to create innovative products and construct strategies, vaults, and even entire protocols in order to acquire TVL and generate revenue. BASE's institutional-grade, scalable asset management enables investors to construct their ideal DeFi portfolio, deposit funds, and receive yields with a single click. Using the native $SAKE token, Sake's revenue model is entirely decentralised and self-sustaining from day one. The protocol redistributes 50% of the deposit, withdrawal, transaction, vault management, and performance fees to $xSAKE stakeholders and the other 50% to the DAO.",
+    "imageLink": "",
+    "description2": "Please ensure you comprehend the terms and conditions of the public auction before proceeding; deposited funds CANNOT be refunded. The auction will begin with a fully diluted valuation (FDV) of 541.65 ETH, establishing a 0.025 ETH floor price for $SAKE, and will increase during the raise. Remember that regardless of when you participate, all participants will receive $SAKE tokens at the same ultimate price.",
+    "token0": {
+      "84531": "0xadfd07f18D5C28833dC86D10FfC9D9B65aec7D44",
+      "8453": ""
+    },
+    "token1": {
+      "84531": "0xC5bC145835CE2e368CcBA7b39a6Ef2b1Ff97e2b5",
+      "8453": ""
+    },
+    "treasuryList": [],
+    "fairAuction": {
+      "84531": "0x75e70F8e3C6b1840Fb5BDfab365bf9C2893A015E",
+      "8453": ""
+    },
+    "projectLink": "https://test.kojiki.exchange"
+  }
+}

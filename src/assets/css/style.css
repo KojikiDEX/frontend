@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --kojiki-red: #fe9595;
+  --kojiki-blue: #80bdff;
+  --kojiki-gray: #7e7e7e;
+  --kojiki-white: #f0f0f0;
+
+  --kojiki-font-title: "prefectures", sans-serif;
+  --kojiki-font-text: "berkely", sans-serif;
+
+  --kojiki-size-title: 20px;
+  --kojiki-size-text: 15px;
+  --kojiki-size-value: 12px;
+}
+
+@font-face {
+  font-family: "prefectures";
+  src: url("../fonts/Prefectures.ttf") format("truetype");
+}
+@font-face {
+  font-family: "berkely";
+  src: url("../fonts/berkeley-mono-variable-2.ttf") format("truetype");
+}
+
+* {
+  color: var(--kojiki-gray);
+  font-size: var(--kojiki-size-text);
+  font-family: var(--kojiki-font-text);
+  border-color: var(--kojiki-gray);
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(#4ca3ff, #4ca3ff);
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  background-color: #8bbef5;
+  height: 1.2rem;
+  width: 1.2rem;
+  border: 2px solid #4ca3ff;
+  border-radius: 100%;
+}
+
+input {
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:active {
+  outline: none;
+}
+
+/* input[type="range"]::-webkit-slider-runnable-track {
+  background: #14a8d4;
+  height: 0.5rem;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #14a8d4;
+  height: 0.5rem;
+} */
+
+body {
+  /* background-image: url(../img/bg/lg.jpg); */
+  background-color: var(--kojiki-white);
+  /* background-size: 100% 100%; */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: var(--kojiki-size-title);
+  color: var(--kojiki-blue);
+}
+
+button.default {
+  height: fit-content;
+  padding: 0px 15px;
+  background: var(--kojiki-gray) !important;
+  color: var(--kojiki-white) !important;
+  border: 2px solid var(--kojiki-gray) !important;
+}
+
+button.default-outline {
+  height: fit-content;
+  padding: 0px 15px;
+  background: none;
+  color: var(--kojiki-gray) !important;
+  border: 2px solid var(--kojiki-gray) !important;
+}
+
+button.default-outline:hover {
+  background: var(--kojiki-gray) !important;
+  color: var(--kojiki-white) !important;
+}
+
+button.primary-outline {
+  height: fit-content;
+  padding: 0px 15px;
+  background: none;
+  color: var(--kojiki-blue) !important;
+  border: 2px solid var(--kojiki-blue) !important;
+}
+
+button.primary {
+  height: fit-content;
+  padding: 3px 5px;
+  background: var(--kojiki-blue);
+  color: var(--kojiki-white) !important;
+}
+
+button.danger-outline {
+  height: fit-content;
+  padding: 0px 15px;
+  background: none;
+  color: var(--kojiki-red) !important;
+  border: 2px solid var(--kojiki-red) !important;
+}
+
+button.danger {
+  height: fit-content;
+  padding: 3px 5px;
+  background: var(--kojiki-red);
+  color: var(--kojiki-white) !important;
+}
+
+.font-sans {
+  font-family: var(--kojiki-font-text) !important;
+}
+
+.title {
+  color: var(--kojiki-blue);
+  font-size: var(--kojiki-size-title);
+  font-family: var(--kojiki-font-title);
+}
+
+.position-item * {
+  font-size: var(--kojiki-size-value);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--kojiki-gray);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 20px;
+  left: 1px;
+  bottom: 1px;
+  background-color: var(--kojiki-white);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+  background-color: var(--kojiki-blue);
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px var(--kojiki-blue);
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
